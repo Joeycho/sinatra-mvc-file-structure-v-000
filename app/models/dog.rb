@@ -2,19 +2,18 @@ class Dog
   
   attr_accessor :name, :breed, :age
   
-  @@all = 0;
   
   def initialize(name, breed, age)
     @name = name;
     @breed = breed;
     @age = age;
     
-  @@all+=1;
+  self.class.all.count +=1;
   
   end
   
   def self.all
-    @@all
+    attr_accessor :count
   end
   
 end
