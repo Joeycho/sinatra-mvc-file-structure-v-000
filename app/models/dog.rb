@@ -8,12 +8,13 @@ class Dog
     @breed = breed;
     @age = age;
     
-  self.class.all.count +=1;
+  @@all += 1
   
   end
   
   def self.all
-    attr_accessor :count
+    @@all
+    @count = @@all
   end
   
 end
