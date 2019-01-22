@@ -13,6 +13,8 @@ class Dog
   
   end
   
-  self.all = @@all;
+  def self.all
+    @@all
+  end
   
 end
